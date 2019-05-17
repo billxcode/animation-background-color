@@ -13,25 +13,42 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="r8O-Df-Ic7">
+                    <connections>
+                        <action selector="moveRandomly:" destination="BYZ-38-t0r" id="oLA-KV-GWF"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationInSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jBR-zL-7DS">
-                                <rect key="frame" x="87" y="169" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBR-zL-7DS">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3E2-SF-Ux9"/>
+                                    <constraint firstAttribute="height" constant="100" id="4Hj-99-T4v"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="r8O-Df-Ic7" appends="YES" id="jDd-DF-tPq"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jBR-zL-7DS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d1T-hu-HAx"/>
+                            <constraint firstItem="jBR-zL-7DS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="plJ-ON-kBC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="superView" destination="8bC-Xf-vdC" id="dLR-Rk-AsZ"/>
                         <outlet property="viewFrame" destination="jBR-zL-7DS" id="NGd-Tv-f45"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
