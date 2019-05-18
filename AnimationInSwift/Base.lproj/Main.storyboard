@@ -36,20 +36,174 @@
                                     <outletCollection property="gestureRecognizers" destination="r8O-Df-Ic7" appends="YES" id="jDd-DF-tPq"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6c-wz-Vv0">
+                                <rect key="frame" x="20" y="787" width="374" height="30"/>
+                                <state key="normal" title="Swipe Gesture"/>
+                                <connections>
+                                    <segue destination="O0B-H1-3Bx" kind="show" id="seW-3L-JDU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="r6c-wz-Vv0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4pi-3b-8bc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r6c-wz-Vv0" secondAttribute="trailing" constant="20" id="Rei-Z7-vAJ"/>
                             <constraint firstItem="jBR-zL-7DS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d1T-hu-HAx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="r6c-wz-Vv0" secondAttribute="bottom" constant="45" id="hgz-x1-rdh"/>
                             <constraint firstItem="jBR-zL-7DS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="plJ-ON-kBC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="superView" destination="8bC-Xf-vdC" id="dLR-Rk-AsZ"/>
+                        <outlet property="superView" destination="8bC-Xf-vdC" id="Tee-AR-Mcy"/>
                         <outlet property="viewFrame" destination="jBR-zL-7DS" id="NGd-Tv-f45"/>
                     </connections>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="147.82608695652175" y="20.758928571428569"/>
+        </scene>
+        <!--Swipe Gesture View Controller-->
+        <scene sceneID="MHL-q4-Dt4">
+            <objects>
+                <viewController id="O0B-H1-3Bx" customClass="SwipeGestureViewController" customModule="AnimationInSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ljx-NN-PXg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2EG-XX-3a1">
+                                <rect key="frame" x="7" y="248" width="400" height="400"/>
+                                <color key="backgroundColor" red="0.0046993972080000002" green="0.00057005508649999996" blue="0.001322546257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="KBC-Gk-mPP"/>
+                                    <constraint firstAttribute="width" constant="400" id="rB9-bx-P5w"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zra-Qw-h9z" appends="YES" id="ccl-x0-mYO"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oF8-XU-4ED">
+                                <rect key="frame" x="20" y="787" width="374" height="30"/>
+                                <state key="normal" title="Pan Gesture"/>
+                                <connections>
+                                    <segue destination="mFm-RM-9ua" kind="show" id="4lh-Gx-liA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9l2-l5-LOi" firstAttribute="bottom" secondItem="oF8-XU-4ED" secondAttribute="bottom" constant="45" id="ZP8-4t-2sa"/>
+                            <constraint firstItem="2EG-XX-3a1" firstAttribute="centerY" secondItem="ljx-NN-PXg" secondAttribute="centerY" id="bPj-AF-m77"/>
+                            <constraint firstItem="oF8-XU-4ED" firstAttribute="leading" secondItem="9l2-l5-LOi" secondAttribute="leading" constant="20" id="q7f-hq-fv7"/>
+                            <constraint firstItem="9l2-l5-LOi" firstAttribute="trailing" secondItem="oF8-XU-4ED" secondAttribute="trailing" constant="20" id="weE-7m-Ihw"/>
+                            <constraint firstItem="2EG-XX-3a1" firstAttribute="centerX" secondItem="ljx-NN-PXg" secondAttribute="centerX" id="zZI-ON-5Jv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9l2-l5-LOi"/>
+                    </view>
+                    <connections>
+                        <outlet property="objectGame" destination="2EG-XX-3a1" id="0W7-hu-bMQ"/>
+                        <outlet property="swipeGesture" destination="zra-Qw-h9z" id="Vnv-3l-f8n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BnF-Sw-JoG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="zra-Qw-h9z">
+                    <connections>
+                        <action selector="swipeGestureAction:" destination="O0B-H1-3Bx" id="KE6-8F-puZ"/>
+                        <outlet property="delegate" destination="2EG-XX-3a1" id="7Rp-M6-Q63"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1004" y="21"/>
+        </scene>
+        <!--Pan Gesture View Controller-->
+        <scene sceneID="T6G-0f-oa3">
+            <objects>
+                <viewController id="mFm-RM-9ua" customClass="PanGestureViewController" customModule="AnimationInSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sER-Z3-0qR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8n-mx-WUZ">
+                                <rect key="frame" x="107" y="248" width="200" height="400"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLI-62-Ch6">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head rick" translatesAutoresizingMaskIntoConstraints="NO" id="ZCT-AB-KhQ">
+                                                <rect key="frame" x="-50" y="0.0" width="300" height="200"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ZCT-AB-KhQ" secondAttribute="trailing" constant="-50" id="Aho-12-5Dh"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZCT-AB-KhQ" secondAttribute="bottom" id="Ajb-gd-efG"/>
+                                            <constraint firstAttribute="height" constant="200" id="YVG-b2-uT0"/>
+                                            <constraint firstAttribute="width" constant="200" id="c3M-Mh-pKU"/>
+                                            <constraint firstItem="ZCT-AB-KhQ" firstAttribute="top" secondItem="RLI-62-Ch6" secondAttribute="top" id="tJK-dj-NeY"/>
+                                            <constraint firstItem="ZCT-AB-KhQ" firstAttribute="leading" secondItem="RLI-62-Ch6" secondAttribute="leading" constant="-50" id="yQW-9x-bBy"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYc-GB-A5T">
+                                        <rect key="frame" x="0.0" y="200" width="200" height="200"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foot rick" translatesAutoresizingMaskIntoConstraints="NO" id="TUD-MY-Old">
+                                                <rect key="frame" x="-50" y="0.0" width="300" height="200"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="TUD-MY-Old" secondAttribute="bottom" id="GMS-Ph-fM4"/>
+                                            <constraint firstItem="TUD-MY-Old" firstAttribute="leading" secondItem="AYc-GB-A5T" secondAttribute="leading" constant="-50" id="asM-sG-NPP"/>
+                                            <constraint firstAttribute="width" constant="200" id="eVX-Oy-z3F"/>
+                                            <constraint firstItem="TUD-MY-Old" firstAttribute="top" secondItem="AYc-GB-A5T" secondAttribute="top" id="pKv-gs-tfl"/>
+                                            <constraint firstAttribute="trailing" secondItem="TUD-MY-Old" secondAttribute="trailing" constant="-50" id="r6I-BR-25K"/>
+                                            <constraint firstAttribute="height" constant="200" id="wjX-5B-iGH"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="GNu-Wd-EKi" appends="YES" id="oKT-zk-Zen"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="AYc-GB-A5T" secondAttribute="bottom" id="7Lv-dl-nXG"/>
+                                    <constraint firstAttribute="width" constant="200" id="Ip8-x0-16h"/>
+                                    <constraint firstAttribute="height" constant="400" id="PdI-NR-TIU"/>
+                                    <constraint firstItem="RLI-62-Ch6" firstAttribute="leading" secondItem="d8n-mx-WUZ" secondAttribute="leading" id="ST3-2c-vXl"/>
+                                    <constraint firstItem="AYc-GB-A5T" firstAttribute="leading" secondItem="RLI-62-Ch6" secondAttribute="leading" id="gON-XA-KTD"/>
+                                    <constraint firstItem="RLI-62-Ch6" firstAttribute="top" secondItem="d8n-mx-WUZ" secondAttribute="top" id="wfH-o7-emh"/>
+                                    <constraint firstAttribute="trailing" secondItem="RLI-62-Ch6" secondAttribute="trailing" id="x3i-Mm-c4r"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="d8n-mx-WUZ" firstAttribute="centerX" secondItem="sER-Z3-0qR" secondAttribute="centerX" id="0p3-nW-Ex3"/>
+                            <constraint firstItem="d8n-mx-WUZ" firstAttribute="centerY" secondItem="sER-Z3-0qR" secondAttribute="centerY" id="2Rn-LB-7K1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ePi-Z6-SJj"/>
+                    </view>
+                    <connections>
+                        <outlet property="objectGame" destination="AYc-GB-A5T" id="gtw-ct-OVl"/>
+                        <outlet property="padCoordinat" destination="GNu-Wd-EKi" id="ECp-Jq-XEN"/>
+                        <outlet property="superView" destination="sER-Z3-0qR" id="CEp-EM-CwP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LFF-bG-dhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="GNu-Wd-EKi">
+                    <connections>
+                        <action selector="getCoordinate:" destination="mFm-RM-9ua" id="XPd-aV-CO6"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="7uH-Hc-jnk"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="21"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="foot rick" width="435" height="286"/>
+        <image name="head rick" width="435" height="286"/>
+    </resources>
 </document>

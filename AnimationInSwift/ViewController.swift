@@ -48,21 +48,6 @@ class ViewController: UIViewController {
                 self.viewFrame.frame = CGRect(x: randomX, y: randomY, width: 100, height: 100)
             })
             
-            if randomX > Int(halfWidthScreen) {
-                randomX -= 30
-            } else {
-                randomX += 30
-            }
-            
-            if randomY > Int(halfHeightScreen) {
-                randomY -= 30
-            } else {
-                randomY += 30
-            }
-            
-            UIView.animate(withDuration: 0.2) {
-                self.viewFrame.frame = CGRect(x: randomX, y: randomY, width: 100, height: 100)
-            }
         }
     }
     

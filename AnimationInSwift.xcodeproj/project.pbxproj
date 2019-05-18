@@ -15,6 +15,8 @@
 		B706C073228E9AF7005EE6E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B706C071228E9AF7005EE6E4 /* LaunchScreen.storyboard */; };
 		B706C07E228E9AF7005EE6E4 /* AnimationInSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C07D228E9AF7005EE6E4 /* AnimationInSwiftTests.swift */; };
 		B706C089228E9AF7005EE6E4 /* AnimationInSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C088228E9AF7005EE6E4 /* AnimationInSwiftUITests.swift */; };
+		B706C097228FAD1B005EE6E4 /* SwipeGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C096228FAD1B005EE6E4 /* SwipeGestureViewController.swift */; };
+		B706C099228FB6B2005EE6E4 /* PanGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C098228FB6B2005EE6E4 /* PanGestureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B706C084228E9AF7005EE6E4 /* AnimationInSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationInSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B706C088228E9AF7005EE6E4 /* AnimationInSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationInSwiftUITests.swift; sourceTree = "<group>"; };
 		B706C08A228E9AF7005EE6E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B706C096228FAD1B005EE6E4 /* SwipeGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGestureViewController.swift; sourceTree = "<group>"; };
+		B706C098228FB6B2005EE6E4 /* PanGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				B706C065228E9AF5005EE6E4 /* AppDelegate.swift */,
 				B706C067228E9AF5005EE6E4 /* ViewController.swift */,
 				B706C069228E9AF5005EE6E4 /* Main.storyboard */,
+				B706C098228FB6B2005EE6E4 /* PanGestureViewController.swift */,
+				B706C096228FAD1B005EE6E4 /* SwipeGestureViewController.swift */,
 				B706C06F228E9AF7005EE6E4 /* Assets.xcassets */,
 				B706C071228E9AF7005EE6E4 /* LaunchScreen.storyboard */,
 				B706C074228E9AF7005EE6E4 /* Info.plist */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B706C068228E9AF5005EE6E4 /* ViewController.swift in Sources */,
+				B706C099228FB6B2005EE6E4 /* PanGestureViewController.swift in Sources */,
 				B706C06E228E9AF5005EE6E4 /* AnimationInSwift.xcdatamodeld in Sources */,
+				B706C097228FAD1B005EE6E4 /* SwipeGestureViewController.swift in Sources */,
 				B706C066228E9AF5005EE6E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
