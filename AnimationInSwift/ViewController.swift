@@ -30,12 +30,8 @@ class ViewController: UIViewController {
         self.halfWidthScreen = self.widthScreen/2
         self.halfHeightScreen = self.heightScreen/2
         
-        
-//        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(changeColor), userInfo: nil, repeats: true)
-        
         self.viewFrame.layer.cornerRadius = 50
         
-        // Do any additional setup after loading the view.
     }
    
     

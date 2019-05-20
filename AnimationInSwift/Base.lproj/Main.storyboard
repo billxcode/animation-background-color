@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mFm-RM-9ua">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,12 +13,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="r8O-Df-Ic7">
-                    <connections>
-                        <action selector="moveRandomly:" destination="BYZ-38-t0r" id="oLA-KV-GWF"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationInSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -59,6 +53,12 @@
                         <outlet property="viewFrame" destination="jBR-zL-7DS" id="NGd-Tv-f45"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="r8O-Df-Ic7">
+                    <connections>
+                        <action selector="moveRandomly:" destination="BYZ-38-t0r" id="oLA-KV-GWF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="147.82608695652175" y="20.758928571428569"/>
         </scene>
@@ -85,9 +85,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oF8-XU-4ED">
                                 <rect key="frame" x="20" y="787" width="374" height="30"/>
                                 <state key="normal" title="Pan Gesture"/>
-                                <connections>
-                                    <segue destination="mFm-RM-9ua" kind="show" id="4lh-Gx-liA"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -131,6 +128,7 @@
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head rick" translatesAutoresizingMaskIntoConstraints="NO" id="ZCT-AB-KhQ">
                                                 <rect key="frame" x="-50" y="0.0" width="300" height="200"/>
+                                                <gestureRecognizers/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -142,6 +140,9 @@
                                             <constraint firstItem="ZCT-AB-KhQ" firstAttribute="top" secondItem="RLI-62-Ch6" secondAttribute="top" id="tJK-dj-NeY"/>
                                             <constraint firstItem="ZCT-AB-KhQ" firstAttribute="leading" secondItem="RLI-62-Ch6" secondAttribute="leading" constant="-50" id="yQW-9x-bBy"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="rGE-N8-zXN" appends="YES" id="e6p-5g-3HS"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYc-GB-A5T">
                                         <rect key="frame" x="0.0" y="200" width="200" height="200"/>
@@ -186,6 +187,8 @@
                         <viewLayoutGuide key="safeArea" id="ePi-Z6-SJj"/>
                     </view>
                     <connections>
+                        <outlet property="headRick" destination="RLI-62-Ch6" id="Afr-4r-tti"/>
+                        <outlet property="headRickGestureOutlet" destination="rGE-N8-zXN" id="Ix4-d4-J8S"/>
                         <outlet property="objectGame" destination="AYc-GB-A5T" id="gtw-ct-OVl"/>
                         <outlet property="padCoordinat" destination="GNu-Wd-EKi" id="ECp-Jq-XEN"/>
                         <outlet property="superView" destination="sER-Z3-0qR" id="CEp-EM-CwP"/>
@@ -197,7 +200,11 @@
                         <action selector="getCoordinate:" destination="mFm-RM-9ua" id="XPd-aV-CO6"/>
                     </connections>
                 </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="7uH-Hc-jnk"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="rGE-N8-zXN">
+                    <connections>
+                        <action selector="headRickGesture:" destination="mFm-RM-9ua" id="Qqc-5t-rHb"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1810" y="21"/>
         </scene>

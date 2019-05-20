@@ -17,6 +17,7 @@
 		B706C089228E9AF7005EE6E4 /* AnimationInSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C088228E9AF7005EE6E4 /* AnimationInSwiftUITests.swift */; };
 		B706C097228FAD1B005EE6E4 /* SwipeGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C096228FAD1B005EE6E4 /* SwipeGestureViewController.swift */; };
 		B706C099228FB6B2005EE6E4 /* PanGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C098228FB6B2005EE6E4 /* PanGestureViewController.swift */; };
+		B7F9FB5E22927054005A3774 /* bensound-retrosoul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7F9FB5D22927054005A3774 /* bensound-retrosoul.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B706C08A228E9AF7005EE6E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B706C096228FAD1B005EE6E4 /* SwipeGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGestureViewController.swift; sourceTree = "<group>"; };
 		B706C098228FB6B2005EE6E4 /* PanGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureViewController.swift; sourceTree = "<group>"; };
+		B7F9FB5D22927054005A3774 /* bensound-retrosoul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-retrosoul.mp3"; path = "../../../../Downloads/bensound-retrosoul.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				B706C06F228E9AF7005EE6E4 /* Assets.xcassets */,
 				B706C071228E9AF7005EE6E4 /* LaunchScreen.storyboard */,
 				B706C074228E9AF7005EE6E4 /* Info.plist */,
+				B7F9FB5D22927054005A3774 /* bensound-retrosoul.mp3 */,
 				B706C06C228E9AF5005EE6E4 /* AnimationInSwift.xcdatamodeld */,
 			);
 			path = AnimationInSwift;
@@ -240,6 +243,7 @@
 			files = (
 				B706C073228E9AF7005EE6E4 /* LaunchScreen.storyboard in Resources */,
 				B706C070228E9AF7005EE6E4 /* Assets.xcassets in Resources */,
+				B7F9FB5E22927054005A3774 /* bensound-retrosoul.mp3 in Resources */,
 				B706C06B228E9AF5005EE6E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
