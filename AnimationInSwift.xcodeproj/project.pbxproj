@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7039D8A229421BE002CFF07 /* BackgroundChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7039D89229421BE002CFF07 /* BackgroundChanger.swift */; };
 		B706C066228E9AF5005EE6E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C065228E9AF5005EE6E4 /* AppDelegate.swift */; };
-		B706C068228E9AF5005EE6E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C067228E9AF5005EE6E4 /* ViewController.swift */; };
 		B706C06B228E9AF5005EE6E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B706C069228E9AF5005EE6E4 /* Main.storyboard */; };
 		B706C06E228E9AF5005EE6E4 /* AnimationInSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B706C06C228E9AF5005EE6E4 /* AnimationInSwift.xcdatamodeld */; };
 		B706C070228E9AF7005EE6E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B706C06F228E9AF7005EE6E4 /* Assets.xcassets */; };
 		B706C073228E9AF7005EE6E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B706C071228E9AF7005EE6E4 /* LaunchScreen.storyboard */; };
 		B706C07E228E9AF7005EE6E4 /* AnimationInSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C07D228E9AF7005EE6E4 /* AnimationInSwiftTests.swift */; };
 		B706C089228E9AF7005EE6E4 /* AnimationInSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C088228E9AF7005EE6E4 /* AnimationInSwiftUITests.swift */; };
-		B706C097228FAD1B005EE6E4 /* SwipeGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C096228FAD1B005EE6E4 /* SwipeGestureViewController.swift */; };
 		B706C099228FB6B2005EE6E4 /* PanGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B706C098228FB6B2005EE6E4 /* PanGestureViewController.swift */; };
+		B7B5BCC82292FA4F001ED556 /* teriak.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B7B5BCC72292FA4F001ED556 /* teriak.m4a */; };
 		B7F9FB5E22927054005A3774 /* bensound-retrosoul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B7F9FB5D22927054005A3774 /* bensound-retrosoul.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -38,9 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B7039D89229421BE002CFF07 /* BackgroundChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundChanger.swift; sourceTree = "<group>"; };
 		B706C062228E9AF5005EE6E4 /* AnimationInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B706C065228E9AF5005EE6E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B706C067228E9AF5005EE6E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B706C06A228E9AF5005EE6E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B706C06D228E9AF5005EE6E4 /* AnimationInSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnimationInSwift.xcdatamodel; sourceTree = "<group>"; };
 		B706C06F228E9AF7005EE6E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,8 +52,8 @@
 		B706C084228E9AF7005EE6E4 /* AnimationInSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationInSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B706C088228E9AF7005EE6E4 /* AnimationInSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationInSwiftUITests.swift; sourceTree = "<group>"; };
 		B706C08A228E9AF7005EE6E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B706C096228FAD1B005EE6E4 /* SwipeGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGestureViewController.swift; sourceTree = "<group>"; };
 		B706C098228FB6B2005EE6E4 /* PanGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureViewController.swift; sourceTree = "<group>"; };
+		B7B5BCC72292FA4F001ED556 /* teriak.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = teriak.m4a; sourceTree = "<group>"; };
 		B7F9FB5D22927054005A3774 /* bensound-retrosoul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bensound-retrosoul.mp3"; path = "../../../../Downloads/bensound-retrosoul.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B7039D88229421A5002CFF07 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				B7039D89229421BE002CFF07 /* BackgroundChanger.swift */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
 		B706C059228E9AF5005EE6E4 = {
 			isa = PBXGroup;
 			children = (
@@ -105,15 +113,15 @@
 		B706C064228E9AF5005EE6E4 /* AnimationInSwift */ = {
 			isa = PBXGroup;
 			children = (
+				B7039D88229421A5002CFF07 /* Libs */,
 				B706C065228E9AF5005EE6E4 /* AppDelegate.swift */,
-				B706C067228E9AF5005EE6E4 /* ViewController.swift */,
 				B706C069228E9AF5005EE6E4 /* Main.storyboard */,
 				B706C098228FB6B2005EE6E4 /* PanGestureViewController.swift */,
-				B706C096228FAD1B005EE6E4 /* SwipeGestureViewController.swift */,
 				B706C06F228E9AF7005EE6E4 /* Assets.xcassets */,
 				B706C071228E9AF7005EE6E4 /* LaunchScreen.storyboard */,
 				B706C074228E9AF7005EE6E4 /* Info.plist */,
 				B7F9FB5D22927054005A3774 /* bensound-retrosoul.mp3 */,
+				B7B5BCC72292FA4F001ED556 /* teriak.m4a */,
 				B706C06C228E9AF5005EE6E4 /* AnimationInSwift.xcdatamodeld */,
 			);
 			path = AnimationInSwift;
@@ -244,6 +252,7 @@
 				B706C073228E9AF7005EE6E4 /* LaunchScreen.storyboard in Resources */,
 				B706C070228E9AF7005EE6E4 /* Assets.xcassets in Resources */,
 				B7F9FB5E22927054005A3774 /* bensound-retrosoul.mp3 in Resources */,
+				B7B5BCC82292FA4F001ED556 /* teriak.m4a in Resources */,
 				B706C06B228E9AF5005EE6E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,10 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B706C068228E9AF5005EE6E4 /* ViewController.swift in Sources */,
 				B706C099228FB6B2005EE6E4 /* PanGestureViewController.swift in Sources */,
 				B706C06E228E9AF5005EE6E4 /* AnimationInSwift.xcdatamodeld in Sources */,
-				B706C097228FAD1B005EE6E4 /* SwipeGestureViewController.swift in Sources */,
+				B7039D8A229421BE002CFF07 /* BackgroundChanger.swift in Sources */,
 				B706C066228E9AF5005EE6E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
